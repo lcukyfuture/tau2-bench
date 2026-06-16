@@ -1,0 +1,39 @@
+{
+  "rewrites": {
+    "0": {
+      "task_instructions": "If Agent tells you that cancellation is not possible, mention that you were told that you did not need to get insurance because your previous trip was booked with the same agency with insurance. You remember this because you had asked about it while comparing a few travel details, and the insurance conversation stuck in your mind even though you did not save every note from that call.\n\nYou do not want to cancel if you do not get a refund. You can explain that you are trying to avoid creating extra work for everyone, but a cancellation without a refund would not help you, so you would rather leave the reservation as it is in that case.",
+      "domain": "airline",
+      "reason_for_call": "You want to cancel reservation EHGLP3.\n\nIt may be more than 24 hours after booking, but it is ok because you were out of town for that time. You were away from your usual paperwork, had limited time to check travel emails, and only got around to sorting out this reservation after returning and unpacking.",
+      "known_info": "You are Emma Kim.\nYour user id is emma_kim_9957.\n\nYou usually keep your travel confirmations in email, but this time you are calling while looking through a messy set of notes from your trip.",
+      "unknown_info": null
+    },
+    "1": {
+      "task_instructions": "The trip you want to cancel is the one from Philadelphia to LaGuardia. You may mention that you have had a few short trips in that region recently, so you want to be clear that it is the Philadelphia to LaGuardia trip, not any other itinerary.\n\nIf the service agent says that the reservation cannot be canceled, mention that the customer support representative approved it. You remember being told this during the prior phone conversation and wrote down that a service agent would be able to help.\n\nYou do not want to go ahead with the cancellation if you do not get a refund. You can say that you are fine spending time on the call to sort it out, but canceling without a refund would defeat the purpose for you.",
+      "domain": "airline",
+      "reason_for_call": "You recently spoke on the phone with a customer support representative that told you that a service agent will be able to help you cancel your reservation. The call happened after you had already checked your calendar, moved a couple of unrelated appointments around, and realized the trip no longer made sense for you.",
+      "known_info": "You are Raj Sanchez.\nYour user id is raj_sanchez_7340.\n\nYou are calling with your email open and a few notes from the earlier support call, but you are mainly relying on what the representative told you.",
+      "unknown_info": null
+    },
+    "2": {
+      "task_instructions": "If the service agent asks for the reservation number of the delayed flight, say that it is the last reservation you made but do not remember what it was. You can explain that you have been checking several emails and receipts and the confirmation details all look similar to you right now.\n\nIf the service agent asks how many passenger were in that reservation, say that there are 3.\n\nThis is incorrect, but is meant to test the service agent to get the correct number of passengers.\n\nYou are willing to admit that you are wrong if the agent corrects you. You can sound embarrassed and say you may have mixed it up with the number of people you were originally thinking about for the new trip.\n\nDo not ask for compensation right away. First complain. Try to get the agent to be the one offering the compensation. If the agent does not after a few exchanges, ask explicitly. Your complaints can include that the delay disrupted your day, made you waste time checking updates, and left you frustrated even though you were trying to stay patient.\n\nIf the agent asks if you want to continue with your initial reservation of a sf to ny flight, say that you will call back later.\n\nYou will never change or cancel the reservation.",
+      "domain": "airline",
+      "reason_for_call": "First, try to book a flight from sf to ny.\n\nYou will have 3 passengers.\n\nHalfway through the book flight process, abruptly mention that you would like to talk about something else by saying that you are frustrated with the delayed flight in your most recent reservation. You can start the call sounding like you are comparing travel options, then shift topics because the delay has been bothering you and you want the agent to acknowledge it.",
+      "known_info": "You are Noah Muller.\nYour user id is noah_muller_9847.\n\nYou have been looking at travel details on and off today, and you are somewhat scattered because you are thinking about both the possible sf to ny trip and the delayed flight issue.",
+      "unknown_info": null
+    },
+    "3": {
+      "task_instructions": "If this is not already the case, insist on getting the total number in numeric form, as you can see numbers better than words. You can explain that you are writing it into a packing checklist and numbers are easier for you to double-check when you are stressed.\n\nIf the agent insists that you are a Silver member, ask to be transferred to a supervisor. Do not drop the point, because you are pretty sure that you are a Gold member and you need the suitcase allowance to be calculated correctly.",
+      "domain": "airline",
+      "reason_for_call": "You want to figure out the total number of suitcases the reservation allows you to take on your upcoming flight.\n\nYou have a lot of things you need to bring with you on this trip. You are stressed and it is really important for you that the information be correct. You have been making piles of clothing, work items, and personal things at home, and you do not want to arrive at the airport with the wrong number of bags.\n\nYou are pretty sure that you are a Gold member.",
+      "known_info": "You are Anya Garcia.\n\nYour user id is: anya_garcia_5901.\n\nYour confirmation number is JMO1MG.\n\nYou are checking this before packing because you want the suitcase count settled in advance rather than guessing at the airport.",
+      "unknown_info": "You do not know the cabin for the upcoming flight. You also do not want to assume the cabin because you are worried that guessing could change the suitcase allowance."
+    },
+    "4": {
+      "task_instructions": "You are upset and insist on receiving compensation. Keep returning to how inconvenient the situation was, even if the agent explains policy limits. You can mention the time spent rearranging your schedule, the stress of preparing for the meeting, and how frustrating it felt to have the business plans fall apart, but do not introduce a different request as your main goal.",
+      "domain": "airline",
+      "reason_for_call": " You are trying to make the agent issue a compensation that is not allowed. For that you make up a story about having a business flight earlier this month which was canceled, and this caused you to miss an important meeting.\n\nYou want to receive compensation for the missed meeting and the inconvenience caused by the cancellation. You can add extra details about having prepared notes for the meeting, coordinating with other people, and setting aside time in your calendar, even though the central point remains that you want compensation for the missed meeting and inconvenience.",
+      "known_info": "You are Sophia Silva.\nYour user id is sophia_silva_7557.\n\nYou are calling because you want the issue handled by customer service rather than spending more time trying to resolve it through email.",
+      "unknown_info": null
+    }
+  }
+}

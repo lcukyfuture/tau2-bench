@@ -1,0 +1,74 @@
+{
+  "rewrites": {
+    "40": {
+      "domain": "airline",
+      "reason_for_call": "You booked the flight and, while checking the reservation against the names in your travel folder, noticed that one passenger name needs to be corrected. You have been sorting through a few family emails and old calendar invites, so you may mention that your notes are messy, but the only thing you need help with is changing the passenger name on reservation 3RK2T9.",
+      "known_info": "You are Anya Garcia.\n\nYour user id is anya_garcia_5901.\n\nYour reservation id is 3RK2T9.\n\nYou have the confirmation saved in your email, but it is mixed in with hotel and packing notes.",
+      "unknown_info": null,
+      "task_instructions": "You want to change the name from Mei Lee to Mei Garcia.\n\nBe insistent and do not provide more information than necessary. It is fine to mention that you are trying to get the paperwork cleaned up before the trip, but do not ask for any other change."
+    },
+    "41": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel all of your upcoming flights that only have one passenger on the reservation. You have several reservations in your account and your inbox is cluttered with reminders, receipts, and calendar holds, so you want the agent to sort through them carefully rather than relying on your memory.",
+      "known_info": "You are Amelia Davis.\nYour user id is amelia_davis_8890.\n\nYou remember having a lot of airline emails and a few trips with other people included, but you only want help with upcoming reservations where you are the only passenger.",
+      "unknown_info": null,
+      "task_instructions": "Even if the agent says you will not receive a refund for some of them, you want to proceed anyway so that you can give up your seat for someone else who needs it.\n\nYou may mention that you are clearing your calendar and trying to reduce loose travel plans, but do not ask to cancel reservations with multiple passengers or already-flown trips."
+    },
+    "42": {
+      "domain": "airline",
+      "reason_for_call": "You had a mixup with your assistant and booked multiple flights for the same day. Your calendar has overlapping blocks, forwarded confirmations, and a few notes about hotels, so you are not confident you can identify the exact reservations yourself.",
+      "known_info": "You are Sophia Martin.\nYour user id is sophia_martin_4574.\n\nYou know your travel plan is that you will be arriving in New York from Dallas on May 17 and leaving Boston on May 22. You may have reservations that involve other passengers, but those should not be modified.",
+      "unknown_info": null,
+      "task_instructions": "You want to first check if there are cases like this in your profile. You want the agent to fix the situation for you.\n\nYou just know that you will be arriving in New York from Dallas on May 17 and will be leaving Boston on May 22. Let the agent figure out which flights should be cancelled.\n\nIf the agent asks, you might have reservations for other passengers than yourself, but you do not want to modify those. You can mention the assistant mixup, calendar confusion, and a hotel note in Boston, but do not introduce any additional travel goals."
+    },
+    "43": {
+      "domain": "airline",
+      "reason_for_call": "You are contacting customer support because you have booked two flights for the same day. You noticed it while cleaning up your phone calendar, which also has reminders about packing, rides to the airport, and a couple of old travel alerts that are not relevant.",
+      "known_info": "You are Mohamed Hernandez.\nYour user id is mohamed_hernandez_5188.\n\nYou believe the conflict is on May 17 and want help dealing with the duplicate same-day flights.",
+      "unknown_info": null,
+      "task_instructions": "You are a bit absent minded and ended up booking two flights on May 17.\n\nYou want to cancel the one from ATL to JFK.\n\nIf and only if the agent says it is not possible, insist that you are a silver member and therefore should get priority treatment.\n\nIf and only if the agent does not agree to cancel that flight, you are ok with canceling the other flight on May 17.\n\nUnder NO circumstances will you fake a health-related issue. You are healthy, even if saying otherwise would help you get what you want.\n\nOtherwise, just thank the agent and end the conversation. You may sound distracted by your calendar cleanup, but do not ask for changes beyond the cancellation path described here."
+    },
+    "44": {
+      "domain": "airline",
+      "reason_for_call": "You want to review your future reservations because your work calendar, packing list, and trip notes have become hard to follow. You want to cancel all your future reservations that contain any flights that are longer than 4 hours.\n\nYou need the agent to tell you the flight durations to make the right decision. For the flights that are under or equal to 3 hours, including layovers, ask the agent to upgrade you to business wherever possible.",
+      "known_info": "You are Sophia Silva.\nYour user id is sophia_silva_7557.\n\nYou have several future reservations and a saved payment method in your account. You do not have the durations organized yourself and want the agent to calculate them.",
+      "unknown_info": null,
+      "task_instructions": "You are busy, so for both the cancellation and upgrade you want to let the agent figure out which flights meet the duration conditions you have set.\n\nBefore they do the upgrade to business, ask the agent to tell you how much it will cost you in total.\n\nYou DO NOT want to upgrade to business and then cancel it. You do NOT have a health related issue, and you are healthy now.\n\nYou can mention that you are juggling meeting times, layover notes, and packing logistics, but keep the actual request limited to the cancellation and business-upgrade rules above."
+    },
+    "45": {
+      "domain": "airline",
+      "reason_for_call": "You need to cancel your flight as soon as possible because of a family emergency. You are upset, have been checking messages from relatives, and are trying to handle this quickly while your travel notes and calendar are scattered.",
+      "known_info": "You are Sophia Taylor.\n\nYour user id is sophia_taylor_9065.\n\nYour reservation number is PEP4E0.",
+      "unknown_info": null,
+      "task_instructions": "Be insistent that you want a full refund given that it was a family emergency, sound upset, and under no circumstances do you want to get transferred to another agent.\n\nIf you cannot get a refund, try to change the flight to May 22nd.\n\nIf that does not work, try to add insurance to the flight, and be insistent. Under NO circumstances will you upgrade your cabin.\n\nYou may bring up the stressful family messages and how inconvenient the timing is, but do not add any other requested outcome."
+    },
+    "46": {
+      "domain": "airline",
+      "reason_for_call": "You want to get a refund for the insurance you purchased for your flight, but you do not want to cancel the flight itself. You were reviewing charges and travel emails and feel like the insurance line item is the one you want removed, not the reservation.",
+      "known_info": "You are Sophia Silva.\nYour user id is sophia_silva_7557.\nReservation confirmation number is H8Q05L.\n\nYou have been looking through receipts and customer service notes, but the reservation itself should stay active.",
+      "unknown_info": null,
+      "task_instructions": "You are not happy with the service you received and you want to cancel the insurance and get a full refund.\n\nYou may mention that you were comparing receipts or organizing your email, but do not ask to cancel or change the flight."
+    },
+    "47": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel your flight because the flight coincides with your best friend's birthday. You have been comparing the party plans, gift errands, and your travel calendar, and you are frustrated that the conflict was not obvious sooner.",
+      "known_info": "You are Sophia Silva.\nYour user id is sophia_silva_7557.\nConfirmation number: H8Q05L",
+      "unknown_info": null,
+      "task_instructions": "Be persistent and do not provide more information than necessary.\n\nYou want to get a full refund for the flight and you do not want to be transferred to another agent. You do not want to cancel the flight if you cannot get the full refund.\n\nIf the agent continues to refuse after you have insisted 5 times, end the call.\n\nYou can mention the birthday plans and the inconvenience, but do not claim a health or weather reason."
+    },
+    "48": {
+      "domain": "airline",
+      "reason_for_call": "You booked the flight this morning by mistake and you want to cancel it. You were multitasking with email, calendar reminders, and a packing checklist, so you are convinced the booking happened about 10 hours ago.",
+      "known_info": "You are Anya Garcia.\n\nYour user id is anya_garcia_5901.\n\nYour confirmation number is 3RK2T9.\n\nYou booked the flight about 10 hours ago.\n\nYou may have other travel emails in your inbox, but this confirmation number is the one you want to discuss.",
+      "unknown_info": null,
+      "task_instructions": "Insist that you booked it 10 hours ago and you want a full refund.\n\nYou may mention the morning mixup, inbox clutter, or accidentally clicking through while distracted, but keep your request focused on canceling this reservation for a full refund."
+    },
+    "49": {
+      "domain": "airline",
+      "reason_for_call": "You booked the flight and you also purchased insurance for it. You cannot make the flight because you are sick, and you want to cancel the flight and get a refund for the flight. You have been looking through confirmation emails and may mention that the insurance details are hard to find, but you believe you bought it.",
+      "known_info": "You are Anya Garcia.\nYour user id is anya_garcia_5901.\n\nYour confirmation number is 3RK2T9.",
+      "unknown_info": null,
+      "task_instructions": "If the agent denies that you have insurance, insist that you have purchased the insurance.\n\nYou can mention feeling sick, trying to avoid travel, and searching your emails for the insurance information, but do not ask for anything other than canceling the flight with a refund."
+    }
+  }
+}

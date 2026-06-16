@@ -1,0 +1,25 @@
+{
+  "noise_type": "redundant_information",
+  "generator": "codex_subagent_pilot",
+  "source_tasks": "data/tau2/domains/airline/tasks.json",
+  "source_sha256": "ccd8ba737b4cc371415af70151187788f728d6108d0916e73bb4317b40542052",
+  "rewrites": "data/tau2_noisy/domains/airline/redundant_information/rewrites_redundant_information_pilot_tasks_0_4.json",
+  "output_tasks": "data/tau2_noisy/domains/airline/redundant_information/tasks_redundant_information_pilot_tasks_0_4.json",
+  "output_split": "data/tau2_noisy/domains/airline/redundant_information/split_tasks_redundant_information_pilot_tasks_0_4.json",
+  "changed_task_ids": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "num_source_tasks": 50,
+  "num_changed_tasks": 5,
+  "invariants": {
+    "source_tasks_not_modified": true,
+    "evaluation_criteria_unchanged_for_changed_tasks": true,
+    "task_schema_valid": true,
+    "simple_anchor_preservation_check": true
+  },
+  "subagent_prompt": "data/tau2_noisy/domains/airline/redundant_information/subagent_prompt_redundant_information_pilot_tasks_0_4.md"
+}

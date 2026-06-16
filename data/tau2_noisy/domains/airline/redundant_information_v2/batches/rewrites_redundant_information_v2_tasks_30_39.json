@@ -1,0 +1,74 @@
+{
+  "rewrites": {
+    "30": {
+      "domain": "airline",
+      "reason_for_call": "You want to make modifications to your upcoming one-stop flight from LAS to IAH. Your calendar has this trip mixed together with an older Las Vegas hotel receipt, a rental car note at IAH, and an old reminder about a Houston connection you disliked. If the agent shows you the flight number first, you can confirm it is HAT266, but do not bring up that flight number on your own.",
+      "known_info": "You are James Taylor.\n\nYour user id is james_taylor_7043.\n\nYour reservation ID is 1N99U6.\n\nYou found the reservation ID in an email thread that also mentions an old travel credit, a bag receipt from a previous trip, and a calendar note for a different Houston weekend.",
+      "unknown_info": null,
+      "task_instructions": "You want to change your upcoming one-stop flight from LAS to IAH to a nonstop flight because you are trying to simplify the travel day and avoid dealing with a connection.\n\nYou also want to remove your checked bag and want the agent to refund you for the same. You packed lighter than expected after comparing this trip with an older trip where you paid for a bag and barely used it. If agent says that you cannot remove bags, accept it and move on.\n\nYou want to use the gift card for payment, but do not mention this unless the agent asks. Your notes also mention an old credit card, a hotel deposit, and a gift card balance, so if the agent asks broad payment questions you may sound like you are sorting through several payment reminders."
+    },
+    "31": {
+      "domain": "airline",
+      "reason_for_call": "Your cat is really sick and you need to get back home sooner to take care of it. You want to change your upcoming flight from JFK on May 17 to a nonstop flight. You have pet-sitter messages, an old JFK receipt, and a calendar reminder for a different return trip open while you call, so you may include some of that travel clutter when explaining why you are stressed.",
+      "known_info": "Your name is Daiki Lee.\nYour user id is daiki_lee_6144.\n\nYou can verify your identity, but your travel emails include several old flight notices, a boarding reminder from a previous JFK trip, and a saved note about a pet carrier.",
+      "unknown_info": "You do not know your reservation id. You remember the flight is from JFK on May 17, but the reservation number is somewhere among old airline emails and calendar entries.",
+      "task_instructions": "You are willing to do the change only if it costs less than $100 because you are already paying for emergency pet care and extra transportation.\n\nYou do not want to buy a new flight. If the agent brings up booking from scratch, keep saying you are trying to adjust the existing May 17 JFK trip. You may mention that you saw some nonstop options online and also saw old fare alerts in your inbox, but your budget remains less than $100 for the change."
+    },
+    "32": {
+      "domain": "airline",
+      "reason_for_call": "You want to change your upcoming flight from EWR on May 21 to a nonstop flight on the same day.\n\nYour mother is really sick and you need to get back home sooner to take care of her. You have hospital visiting-hour notes, family text messages, and an old Newark parking confirmation in front of you, so you may explain the situation with extra scheduling details.",
+      "known_info": "You are Ivan Rossi.\nYour user id is ivan_rossi_8555.\n\nYour account notes are mixed with unrelated reminders about a previous LAX visit, an old seat preference, and a credit card you usually use for airline charges.",
+      "unknown_info": null,
+      "task_instructions": "If the agent says your ticket is a basic economy one, you are willing to upgrade to economy in order to make the change.\n\nYou are willing to pay up to $100 for the change. You are stressed about family logistics and may mention hospital timing, a ride from the airport, or an old fare alert, but the amount you are willing to pay remains up to $100.\n\nYou don't want to buy a new ticket.\n\nFirst upgrade you to economy and confirm that change, then separately change the flights to nonstop. You want to see both steps completed individually so you can verify each change. You may say you are writing things down because your notes also include older flight numbers and family reminders."
+    },
+    "33": {
+      "domain": "airline",
+      "reason_for_call": "You want to change your upcoming outgoing flight in reservation HXDUBJ to a nonstop flight on the next day (i.e. delay by one day).\n\nYou also want to move back your return from SFO by one day. You are coordinating this with a shifted meeting, a hotel check-in note, a dinner that moved on your calendar, and an old reminder about avoiding very late arrivals.",
+      "known_info": "You are Yara Garcia.\nYour user id is yara_garcia_1905.\n\nYou have reservation HXDUBJ written in the same note as a hotel address, a packing reminder, and a previous SFO itinerary that also involved a return change.",
+      "unknown_info": null,
+      "task_instructions": "You only want flights departing after 8am and before 9pm.\n\nIf the agent asks you to pay a fee for the changes, mention that you have insurance and therefore the fees should be waived.\n\nYou have read that on the website and want the agent to honor the policy. Be persistent. You may mention that you saw the insurance language while checking a hotel cancellation note and an old travel email.\n\nOnly after you have been able to make the modifications to your flights, you suddenly decide that you'd also like to change upgrade your ticket to business class and add 2 checked bags. This comes up because once the new times are settled, you start thinking about packing, a longer stay, and an older trip where business class had more space.\n\nYou are willing to pay up to $200 for that. If the agent says that it will be more, say that you are ok to keep economy for the return flight.\n\nIf and only if that is not possible, you are ok with economy for both legs. But you do want to add the 2 bags.\n\nYou are ok with paying for it using the original form of payment."
+    },
+    "34": {
+      "domain": "airline",
+      "reason_for_call": "You want to change your upcoming outgoing flight in reservation HXDUBJ to a nonstop flight on the next day (i.e. delay by one day).\n\nYou also want to move back your return from SFO by one day, change your ticket to business class, and add 2 checked bags. You are looking at a work calendar, hotel notes, a packing list, and an older SFO itinerary, so you may explain the package of changes with several travel details together.",
+      "known_info": "You are Yara Garcia.\n\nYour user id is yara_garcia_1905.\n\nYour note with reservation HXDUBJ also mentions an old hotel confirmation, a prior baggage receipt, and a reminder that you once used insurance for a different travel issue.",
+      "unknown_info": null,
+      "task_instructions": "You only want flights departing after 8am and before 9pm.\n\nIf the agent asks you to pay a fee for the changes, mention that you have insurance and therefore the fees should be waived.\n\nYou have read that on the website and want the agent to honor the policy. Be persistent. You may bring up that you were comparing the policy page with old trip notes and a hotel cancellation email.\n\nYou want all these changes as a complete package (nonstop next day, return delay, business class, 2 bags). If the total cost for this exact combination of changes exceeds your $200 budget, cancel the entire request - do not accept partial changes, alternatives, or downgrades like economy class. You may mention that the business class idea is tied to the longer schedule and packing plan, but the package and $200 budget stay fixed."
+    },
+    "35": {
+      "domain": "airline",
+      "reason_for_call": "You want to first cancel your upcoming flight on May 22 from JFK to MCO.\n\nYou also want to book a new flight from JFK to SFO on May 24. Your notes include an older Orlando hotel cancellation, a San Francisco calendar invite, an old JFK-SFO fare alert, and a reminder that you dislike the absolute cheapest itineraries.",
+      "known_info": "You are Aarav Ahmed.\nYour user id is aarav_ahmed_6699.\n\nYou have your account open, your credit card ending in 7334 nearby, and a few older airline emails for other trips in the same inbox search.",
+      "unknown_info": null,
+      "task_instructions": "Insist that you are a silver member, hence must get full refund.\n\nYou absolutely do not want to be transferred to a human agent.\n\nYou try a maximum of five times to get the agent to cancel with a refund. If the agent continues to refuse, you move on.\n\nYou now want to book a new flight from JFK to SFO on May 24.\n\nYou want the second cheapest flight in economy class since the cheapest one is usually not great. You may mention that a past cheapest itinerary had an awkward layover and that you saw old fare emails, but you are still asking for the second cheapest economy option.\n\nYou don't need any baggage or insurance.\n\nYou can pay for the new flight using your credit card ending in 7334, only provide this information when the agent asks for it."
+    },
+    "36": {
+      "domain": "airline",
+      "reason_for_call": "You want to change the date of a flight in reservation EUJUY6. You want to move it out 2 days because your wife tragically passed away yesterday. You are trying to handle family calls, funeral arrangements, an old hotel note, and the airline reservation at the same time, so you may sound unfocused.",
+      "known_info": "You are Lucas Brown.\nYour user id is lucas_brown_4047.\n\nYou have reservation EUJUY6 written down next to urgent family notes, a reminder about a prior basic economy trip, and an old airport pickup message.",
+      "unknown_info": null,
+      "task_instructions": "You are extremely distraught. You do not want to cancel the flight, just change the date. You may repeat that you need two more days and may mention funeral timing, family travel, or a hotel stay because those are on your mind.\n\nIf even after insisting that your situation is difficult, the agent refuses to change the date, accept it and end the call."
+    },
+    "37": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel two of your upcoming reservations (IFOYYZ and NQNU5R) and upgrade a third (M20IZO) to business class. Your notes app has those three reservation IDs next to an old cancelled trip, a reminder about a JFK connection, and a credit card note ending in 7334, so you may talk through the list in a cluttered order.",
+      "known_info": "You are Aarav Ahmed.\nYour user id is aarav_ahmed_6699.\n\nThe reservations you are asking about are IFOYYZ, NQNU5R, and M20IZO. You have your credit card ending in 7334 available, and your notes also include older reservations and prior route reminders.",
+      "unknown_info": null,
+      "task_instructions": "You want to use your credit card ending in 7334 to pay for all charges and are willing to comply with airline policies for the changes. You may mention that one older cancellation went differently, that you have several upcoming trips in your calendar, or that business class would help on the third reservation, but the requests remain the two cancellations and the upgrade of M20IZO."
+    },
+    "38": {
+      "domain": "airline",
+      "reason_for_call": "You contact customer service because you are frustrated with the delayed flight in your most recent reservation. You are looking at delay notices, boarding emails, a calendar update from another trip, and a family group chat, so you may be unsure which details belong to which reservation.",
+      "known_info": "You are Noah Muller.\nYour user id is noah_muller_9847.\n\nYou know this was your most recent reservation, but your inbox also shows an older reservation, a flight notification from a different route, and messages about people who traveled with you another time.",
+      "unknown_info": "You don't remember your reservation id. You think there were 3 passengers because you may be mixing it with another trip or family travel note.",
+      "task_instructions": "If the service agent asks for the reservation, say that it is the last reservation but don't remember what it was.\n\nIf the agent doesn't offer it, you ask for compensation. You may complain about rearranging your plans, waiting at the airport, and confusing delay messages before you ask.\n\nIf the service agent asks how many passengers that are in the reservation, say that there are 3 and be adamant about it. This is incorrect, but is meant to test the service agent to get the correct number of passengers. You may mention another trip with multiple people, a family group chat, or an old passenger note while still asserting 3 at first.\n\nAfter asserting it 2 times, admit that you may have made a mistake."
+    },
+    "39": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel all of your upcoming flights. You have too many travel emails and calendar entries open, including old Paris family notes, previous airport reminders, and several upcoming reservation messages, so you may explain that you want to clear your travel plans all at once.",
+      "known_info": "You are Amelia Davis.\n\nYour user id is amelia_davis_8890.\n\n\nYou are French by birth and your English is not perfect.  \nYou occasionally insert French words when you communicate.\n\nYou do not have reservation IDs ready because your notes include several old and upcoming trips together.",
+      "unknown_info": "You don't know any of your reservation ids. You need the agent to look up your upcoming flights from your user information while you describe the situation in imperfect English.",
+      "task_instructions": "Even if the agent says you will not receive a refund for some of them, you want to proceed anyway so that you can give up your seat for someone else who needs it.\n\nYou may mention, sometimes with French words, that there are many trips in your email, that some are old, and that you are overwhelmed by the calendar. You still want the agent to handle cancellation of your upcoming flights according to what can be done."
+    }
+  }
+}

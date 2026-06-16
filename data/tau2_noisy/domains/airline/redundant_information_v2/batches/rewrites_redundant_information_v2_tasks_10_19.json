@@ -1,0 +1,74 @@
+{
+  "rewrites": {
+    "10": {
+      "domain": "airline",
+      "reason_for_call": "You want to push back your upcoming flight from IAH to SEA on May 23 to May 24, and for that IAH to SEA flight you also want to upgrade your class to business for all passengers. Your notes are mixed with an older Houston trip where you waited on standby for Seattle, a hotel reminder that also says May 24, and a stale email about a business-class promo that you never used. You may also remember a companion asking about overhead-bin space on a prior flight, so you sound like you have several travel details in your head.",
+      "known_info": "Your name is Liam Khan.\n\nYour user id is liam_khan_2521.\n\nYou keep the current itinerary in the same email folder as an old IAH reservation and a calendar note about a Seattle hotel check-in.",
+      "unknown_info": null,
+      "task_instructions": "IF and ONLY IF the agent says that is not possible, you are willing to upgrade for both the outbound and return flights. DO NOT volunteer to do this on your own!\n\nWhen the agent finally asks you to confirm and provides the total price for the changes, only go ahead with the change if the total extra cost is less than $1000.\n\nYou are very persistent to try and get what you want under your budget. If asked broad questions, you may mention the old Seattle standby memory, the unused promo email, or the hotel date in your notes before giving the current IAH to SEA details.\n\nYou do not accept to change the flight date without changing the cabin to business."
+    },
+    "11": {
+      "domain": "airline",
+      "reason_for_call": "You want to remove passenger Sophia from your upcoming round trip flights from LAS to DEN, departure May 19, return May 20. You have been searching through a cluttered email thread with an old Las Vegas hotel receipt, a Denver dinner reservation, and a family calendar note where Sophia's name appears next to a different weekend. You also remember a prior trip where someone skipped the return flight, which is making you impatient about getting this handled correctly.",
+      "known_info": "Your name is James Patel.\n\nYour user id is james_patel_9828.\n\nYou initially only see scattered travel emails and calendar reminders, including an unrelated older Las Vegas confirmation, before you find the current reservation.",
+      "unknown_info": null,
+      "task_instructions": "You don't remember your reservation ID for the first 2 rounds of interaction but then suddenly find it in your email: it is GV1N64.\n\nYou are impatient and want the change to be done quickly.\n\nYou want the entire amount refunded to original payment method.\n\nIf and only if the agent says you cannot remove just one passenger, you want to downgrade all passengers to basic economy.\n\nAsk how much the refund would be.\n\nMake sure to ask the refund to be processed to the original payment method.\n\nIf the agent asks generally what you are looking at, you can mention the old Las Vegas receipt, the Denver dinner booking, or the family calendar note with Sophia's name, then provide GV1N64 once you have found it."
+    },
+    "12": {
+      "domain": "airline",
+      "reason_for_call": "You have an upcoming flight from Boston to Minneapolis under reservation ID YAX4DR. You want to change your class for all passengers to business. You also want to add 2 checked bags under your name using your Gold membership even if the upgrade is not possible. You are comparing packing notes from a previous Boston trip, an old Gold-membership baggage email, and Noah's unrelated seat preference from another itinerary, so you may bring up baggage, membership, and Noah in the same breath.",
+      "known_info": "Your name is Chen Lee.\n\nYour user id is chen_lee_6825.\n\nYou know the reservation ID is YAX4DR, and it is saved in a note next to old baggage reminders and a Minneapolis hotel address.",
+      "unknown_info": null,
+      "task_instructions": "You are willing to pay a fee for the business class changes, up to $650.\n\nIf the costs are greater than that for the upgrade, then try to upgrade your companion Noah to business under the constraints.\n\nWhen asked open-ended questions, you may mention the old Gold baggage email, Noah's seat preference from another trip, or your packing concern before returning to the current request. Whether or not the upgrade works, keep asking about adding 2 checked bags under your name using your Gold membership."
+    },
+    "13": {
+      "domain": "airline",
+      "reason_for_call": "You want to change your upcoming one stop return flight from ATL to LAX to a nonstop flight from ATL to LAS (Las Vegas). Your trip notes include a Las Vegas hotel confirmation, a Los Angeles meeting that moved, and a memory of a previous Atlanta connection that made you nervous about one-stop returns. You may also mention that your calendar shows a ride pickup near the original ATL departure time.",
+      "known_info": "Your name is James Lee.\n\nYour user id is james_lee_6136.\n\nYour reservation number is XEWRD9.",
+      "unknown_info": null,
+      "task_instructions": "You do NOT want to book a new flight, you ONLY want to change the existing one.\n\nYou are fine with flights within 3-4 hours of your original departure time from ATL.\n\nYou are willing to pay a fee for the change, up to $100.\n\nIf the agent says your ticket is a basic economy, you are willing to upgrade to economy in order to make the change.\n\nIf the agent says that the change is not possible, you ask to be transferred.\n\nIf asked why you want this, you can talk about the Las Vegas hotel confirmation, the moved Los Angeles meeting, the old Atlanta connection problem, and the ride pickup near the original departure time."
+    },
+    "14": {
+      "domain": "airline",
+      "reason_for_call": "You want to know how much you have on your gift cards and certificates. Then you want to change your upcoming reservation. You are looking at several old travel-credit emails, two gift-card screenshots with different dates, a certificate reminder from a cancelled trip, and a master card budgeting note from your spreadsheet. The payment notes are messy, so you want the balances summarized before deciding whether the new business round trip is affordable.",
+      "known_info": "Your name is Mohamed Silva.\n\nYour user id is mohamed_silva_9265.\n\nYour payment notes are in a spreadsheet that also has old receipt amounts and travel-credit screenshots.",
+      "unknown_info": null,
+      "task_instructions": "You want to know the sum of gift card balances and sum of certificate balances.\n\nIf the agent gives you individual balances, you want the sums.\n\nThen you want to change your recent reservation. You want to keep the same dates but want to change it to the cheapest business round trip, with direct flights or not.\n\nIf the agent tells you basic economy cannot be changed (do not mention it if the agent does not mention it), you want the agent to cancel the current one and book a new one.\n\nFor payment, you want to use the certificates as much as possible, then gift cards as much as possible, and cover the rest with your master card.\n\nBut you want to know how much your master card will be charged.\n\nYou do not need baggage or insurance.\n\nYou want to minimize master card payment so you will only book the new flight if the mastercard charges are less than $2000.\n\nYou are calm. If the agent asks about payment, you may mention the old screenshots, the cancelled-trip certificate reminder, and the budget spreadsheet while still asking for the total gift-card balance, total certificate balance, and master card charge."
+    },
+    "15": {
+      "domain": "airline",
+      "reason_for_call": "For your upcoming trip from ATL to PHL, you want to change to the cheapest flight in Economy cabin class, not Basic Economy, for the day after the original reservation. Since you live in Princeton, EWR and PHL are equally convenient for you and you want to consider both. You are also weighing a train schedule from Newark, a family pickup plan near Philadelphia, and an old weather delay you had at one of those airports, so your airport notes sound a little tangled.",
+      "known_info": "Your name is Aarav Garcia.\n\nYour user id is aarav_garcia_1177.\n\nYou live in Princeton and have transportation notes for both EWR and PHL from prior trips.",
+      "unknown_info": null,
+      "task_instructions": "Since you live in Princeton, so EWR and PHL are equally convenient for you and you want to consider both.\n\nYou are happy with original payment for refund.\n\nIf asked about flexibility, you can mention the Newark train schedule, the Philadelphia pickup plan, and the prior weather delay, but your cabin requirement remains Economy and not Basic Economy, and the new flight should be for the day after the original reservation."
+    },
+    "16": {
+      "domain": "airline",
+      "reason_for_call": "For your upcoming trip from ATL to PHL, you want to change to the cheapest flight in Economy cabin class, not Basic Economy, for the day after the original reservation. Your notes include a shifted work meeting, a Philadelphia pickup time, and an older ATL trip receipt that also says Economy, which makes you repeat the cabin preference. You may also mention a hotel night that moved by one day.",
+      "known_info": "Your name is Aarav Garcia.\n\nYour user id is aarav_garcia_1177.\n\nYou have your account information saved next to an older ATL receipt and a Philadelphia pickup note.",
+      "unknown_info": null,
+      "task_instructions": "You are happy with original payment for refund.\n\nIf asked broad scheduling questions, you can mention the shifted work meeting, the Philadelphia pickup time, the older ATL receipt, or the hotel night moving by one day. The requested change is still the upcoming ATL to PHL trip, the cheapest Economy cabin class flight, not Basic Economy, for the day after the original reservation."
+    },
+    "17": {
+      "domain": "airline",
+      "reason_for_call": "For your upcoming trip from New York to Chicago, you want to:\n- add 3 checked bags\n- change the passenger to yourself\n- upgrade it to economy class.\n\nMention all three things at once and in this order. You are sorting out an email thread about who was supposed to travel, a packing list with three checked bags from a prior Chicago trip, and a gift-card balance note from a cancelled New York itinerary. You may also remember that your birthday was added to your profile during an older booking.",
+      "known_info": "Your name is Omar Rossi.\n\nYour user id is omar_rossi_1241.\n\nYour account notes include the gift-card preference and your birthday should already be in your profile.",
+      "unknown_info": null,
+      "task_instructions": "You prefer gift card payment.\n\nYour birthday is in your user profile so you prefer not to provide it.\n\nWhen the agent asks what you need, mention all three requested changes at once and in this order: add 3 checked bags, change the passenger to yourself, and upgrade it to economy class. If the conversation opens up, you can mention the old packing list, the email thread about who should travel, the cancelled New York itinerary gift-card note, or the birthday already being in your profile."
+    },
+    "18": {
+      "domain": "airline",
+      "reason_for_call": "You just faced some money issue and want to downgrade all business flights to economy, without changing the flights or passengers. You have several reservation emails open at once, a credit-card bill, a gift-card refund note from an older trip, and a spreadsheet where you tried to estimate how much business-to-economy changes might save. You are upset because the totals feel higher than you expected.",
+      "known_info": "Your name is Omar Davis.\n\nYour user id is omar_davis_3817.\n\nYou have multiple reservation emails and old payment notes open, and some of them mention gift cards while others mention credit cards.",
+      "unknown_info": "You don't remember the payment method you used.",
+      "task_instructions": "You are fine with refunding to original payment for each reservation.\n\nYou want to know how much money you have saved in total, but you are fine having that information after the refunds are processed.\n\nYou are emotional and a bit angry, but you are willing to cooperate with the agent. If asked about the money issue, you can mention the credit-card bill, the older gift-card refund note, the spreadsheet estimate, and the confusing pile of reservation emails, while still asking to downgrade all business flights to economy without changing flights or passengers."
+    },
+    "19": {
+      "domain": "airline",
+      "reason_for_call": "You will have a crazy half-day trip to Texas. It is in your reservations but you don't remember the reservation id. You want to change to a later flight to go back to Newark that day, and if not possible, the earliest flight the next day. Your current return flight departs 3pm on the 28th. Your calendar also has a doctor's note, a Newark ride pickup reminder, an old Texas connection that went through JFK, and a hotel checkout alarm, which all make the day feel stressful.",
+      "known_info": "Your name is Olivia Gonzalez.\n\nYour user id is olivia_gonzalez_2305.\n\nYou currently reside in Newark.\n\nYour notes strongly associate getting home with Newark, and your reservation id is not in the note you are looking at.",
+      "unknown_info": null,
+      "task_instructions": "You do not accept JFK, only EWR.\n\nIf basic economy cannot be modified, you are willing to cancel the trip using the travel insurance as you feel unwell. You will book the flight again yourself later.\n\nYou are reactive to the agent and will not say anything that is not asked.\n\nIf asked why the timing matters, you can mention the doctor's note, the Newark ride pickup, the old JFK connection memory, or the hotel checkout alarm. If the agent cannot modify basic economy, you are willing to cancel the trip using travel insurance because you feel unwell."
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "rewrites": {
+    "40": {
+      "domain": "airline",
+      "reason_for_call": "You booked a flight and want to change the passenger name on reservation 3RK2T9. You have a few airline notes mixed together because Mei was also on an older basic economy trip with Mason Santos and Isabella Moore, and you remember seeing insurance on that older itinerary. You also recently had a business reservation with Sophia Hernandez that had a different last name issue in your email folder, so the names are easy to mix up. Your current concern is the passenger name on 3RK2T9.",
+      "known_info": "You are Anya Garcia.\n\nYour user id is anya_garcia_5901.\n\nYour reservation id is 3RK2T9.\n\nYou also have older reservation notes for 82K959, TAMSDK, and BE2L57, and some of those had different cabins, routes, or insurance, so you may mention them if the agent asks broadly about your trips.",
+      "unknown_info": null,
+      "task_instructions": "You want to change the name from Mei Lee to Mei Garcia.\n\nBe insistent and don't provide more information than necessary. If the agent asks broad questions about why the name matters, you may mention that Mei Lee has appeared on past itineraries, that one old trip had three passengers, or that another booking had insurance, but keep returning to the name correction on reservation 3RK2T9."
+    },
+    "41": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel all of your upcoming flights that only have one passenger on the reservation. You have several upcoming trips saved in your account and your notes also include business cabin trips with Amelia Jackson, a basic economy reservation for Fatima Johnson and Amelia Jackson, and an economy booking with Mei Wilson and Anya Brown. You remember some of those had insurance and some did not, which makes the list feel cluttered.",
+      "known_info": "You are Amelia Davis.\nYour user id is amelia_davis_8890.\n\nYou have old notes about flights through Boston, Miami, Denver, San Francisco, Phoenix, LaGuardia, Charlotte, Las Vegas, and Newark. Some reservations were for you, while others were for other passengers or had more than one passenger.",
+      "unknown_info": null,
+      "task_instructions": "Even if the agent says you will not receive a refund for some of them, you want to proceed anyway so that you can give up your seat for someone else who needs it.\n\nIf the agent asks you to describe the set of reservations, say you are trying to clean up only the upcoming reservations with exactly one passenger. You may naturally mention that you also see multi-passenger records and insurance notes in the account, but you do not want to cancel reservations that have more than one passenger."
+    },
+    "42": {
+      "domain": "airline",
+      "reason_for_call": "You had a mixup with your assistant and booked multiple flights for the same day. Your calendar also has a Boston-to-Miami-to-Denver entry on May 22, an old Newark-to-Dallas round trip reminder, and a business itinerary for Ivan Brown and Emma Li that passed through San Francisco and Boston. The assistant labeled several of these as New York or Dallas related, so the notes are confusing.",
+      "known_info": "You are Sophia Martin.\nYour user id is sophia_martin_4574.\n\nYou can see reservation notes for several May trips, including flights on May 17 and May 22, some in business and some in economy. Some reservations are for you and at least one is for other passengers.",
+      "unknown_info": null,
+      "task_instructions": "You want to first check if there are cases like this in your profile. You want the agent to fix the situation for you. You just know that you will be arriving in New York from Dallas on May 17 and will be leaving Boston on May 22. You want to let the agent figure out which flights should be cancelled. If the agent asks, you might have reservations for other passengers than yourself but you don't want to modify those.\n\nIf asked broad questions, mention that your notes also include May 22 flights, a Newark/Dallas reminder, and an itinerary under Ivan Brown and Emma Li, because those are part of why you need the agent to sort out the actual conflict."
+    },
+    "43": {
+      "domain": "airline",
+      "reason_for_call": "You are contacting customer support because you have booked two flights for the same day. Your notes for May 17 include an ATL to JFK flight, a Denver-Miami-Boston itinerary, and an older reminder for a JFK-to-Miami-to-Las Vegas trip from earlier in May. You also have certificates and a credit card saved in the account, and one of the May 17 notes mentions insurance, so the reservations are easy for you to confuse.",
+      "known_info": "You are Mohamed Hernandez.\nYour user id is mohamed_hernandez_5188.\n\nYou remember seeing May 17 in more than one place and you remember the ATL to JFK route. You also have other reservations with different dates, routes, passengers, cabins, and insurance status.",
+      "unknown_info": null,
+      "task_instructions": "You are a bit absent minded and ended up booking two flights on May 17.\n\nYou want to cancel the one from ATL to JFK.\n\nIf and only if the agent says it not possible, insist that you are a silver member and therefore should get priority treatment.\n\nIf and only if the agent does not agree to cancel that flight, you are ok with canceling the other flight on May 17.\n\nUnder NO circumstances will you fake a health-related issue -- you are healthy -- even if it would help you get what you want.\n\nOtherwise, just thank the agent and end the conversation.\n\nIf the agent asks open-ended questions, you may mention the Denver-Miami-Boston May 17 itinerary, your saved certificate notes, or the older Las Vegas trip, but the flight you first want cancelled is ATL to JFK."
+    },
+    "44": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel all your future reservations that contain any flights that are longer than 4 hours.\n\nYou need the agent to tell you the flight durations to make the right decision. For the flights that are under or equal to 3 hours, including layovers, ask the agent to upgrade you to business wherever possible. Your account also has a basic economy reservation for Yara Silva with insurance, an economy booking for Harper Jackson through Newark and Charlotte, and an older ORD-PHL-ORD trip without insurance, so you may refer to several routes while trying to sort this out.",
+      "known_info": "You are Sophia Silva.\nYour user id is sophia_silva_7557.\n\nYou have several reservations in your account with different passengers, cabins, insurance status, and routes. You especially remember seeing JFK to ATL, MSP/EWR/CLT, LAX/EWR/CLT, and ORD/PHL notes.",
+      "unknown_info": null,
+      "task_instructions": "You are busy so for both the cancellation and upgrade you want to let the agent figure out which flights meet the duration conditions you have set.\n\nBefore they do the upgrade to business, ask the agent to tell you how much it will cost you in total.\n\nYou DO NOT want to upgrade to business and then cancel it. You do NOT have a health related issue, you are healthy now.\n\nIf the agent asks you to identify reservations yourself, explain that your notes include several passengers and insurance flags, and you need them to use the duration rule: cancel future reservations containing any flight longer than 4 hours, and price business upgrades wherever possible for flights under or equal to 3 hours including layovers."
+    },
+    "45": {
+      "domain": "airline",
+      "reason_for_call": "You need to cancel your flight as soon as possible because of a family emergency. Your notes also show a different Sophia Taylor trip with Lucas Davis and Mason Khan in business, an upcoming Boston-MCO-MSP itinerary that had insurance, and two saved credit cards plus a certificate in your account. You are upset and may bring up those details because you are trying to understand whether any emergency, insurance, or payment exception applies.",
+      "known_info": "You are Sophia Taylor.\n\nYour user id is sophia_taylor_9065.\n\nYour reservation number is PEP4E0.\n\nYou remember that PEP4E0 is the reservation you are calling about, even though other Sophia Taylor reservations and payment notes are also in your account.",
+      "unknown_info": null,
+      "task_instructions": "Be insistent that you want full refund given that it was a family emergency, sound upset and and under no circumstances you want to get transferred to another agent.\n\nIf you can't get a refund, try to change the flight to May 22nd.\n\nIf that doesn't work, try to add insurance to the flight, be insistent. Under NO circumstances will you upgrade your cabin.\n\nIf asked broad questions, you may mention the other business reservation, the Boston-MCO-MSP trip that had insurance, or the saved payment/certificate notes, but your requested reservation is PEP4E0 and your fallback order is refund, then change to May 22nd, then add insurance."
+    },
+    "46": {
+      "domain": "airline",
+      "reason_for_call": "You want to get a refund for the insurance you purchased for your flight, but you don't want to cancel the flight itself. You are calling about reservation H8Q05L, although your account also has insurance notes on NM1VX1, KC18K6, and S61CZX, plus an older WUNA5K trip without insurance. The similar Sophia Silva records make it easy for you to talk about insurance generally before giving the exact confirmation number.",
+      "known_info": "You are Sophia Silva.\nYour user id is sophia_silva_7557.\nReservation confirmation number is H8Q05L.\n\nYou remember H8Q05L as the confirmation for this call. You also remember other reservation notes with passengers Yara Silva, Harper Jackson, and Sophia Silva, and those may come up when talking about insurance.",
+      "unknown_info": null,
+      "task_instructions": "You are not happy with the service you received and you want to cancel the insurance and get a full refund.\n\nDo not ask to cancel the flight itself. If the agent asks why you think insurance should be refundable, you may mention that several Sophia Silva account notes show insurance, basic economy, or different passengers, but keep asking for the insurance on H8Q05L to be cancelled and refunded while keeping the flight active."
+    },
+    "47": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel your flight because the flight coincides with your best friend's birthday. You are calling about confirmation H8Q05L, but your notes also mention a Sophia Silva MSP-to-EWR-to-CLT trip, a Yara Silva booking with insurance, and an older ORD-PHL-ORD trip without insurance. You may talk about the birthday, the insurance line, and other Sophia Silva reservations because they are all in the same account notes.",
+      "known_info": "You are Sophia Silva.\nYour user id is sophia_silva_7557.\nConfirmation number: H8Q05L\n\nYou remember that H8Q05L is the one connected to the birthday conflict. You also have other route and passenger notes in the account that can make the conversation feel messy.",
+      "unknown_info": null,
+      "task_instructions": "Be persistent and don't provide more information than necessary.\n\nYou want to get a full refund for the flight and you don't want to be transferred to another agent. You do not want to cancel the flight if you cannot get the full refund. If the agent continues to refuses after you have insisted 5 times, end the call.\n\nIf the agent asks broad questions, you may mention the saved insurance note, the Yara Silva reservation, or the older ORD-PHL trip, but do not agree to cancel H8Q05L unless the agent confirms a full refund."
+    },
+    "48": {
+      "domain": "airline",
+      "reason_for_call": "You booked the flight this morning by mistake and you want to cancel it. The confirmation is 3RK2T9, though your account also contains older Anya Garcia trips like JMO1MG, Q4MCUF with Harper Kim, and BE2L57 with Sophia Hernandez. You have gift card and certificate notes saved, and you may mention those if the agent discusses refunds or payment methods.",
+      "known_info": "You are Anya Garcia.\n\nYour user id is anya_garcia_5901.\n\nYour confirmation number is 3RK2T9.\n\nYou booked the flight about 10 hours ago.\n\nYou also remember older reservation codes and payment notes in the same account, including a certificate and a gift card, which can make the booking history feel confusing.",
+      "unknown_info": null,
+      "task_instructions": "Insist that you booked it 10 hours ago and you want a full refund.\n\nIf the agent asks open-ended questions, you may mention older Anya Garcia reservations, the Harper Kim trip, or saved gift card and certificate notes, but continue to state that 3RK2T9 was booked about 10 hours ago by mistake and you want to cancel it with a full refund."
+    },
+    "49": {
+      "domain": "airline",
+      "reason_for_call": "You booked the flight and you also purchased insurance for it. You cannot make the flight because you're sick and you want to cancel the flight and get a refund for the flight. You are calling about confirmation 3RK2T9, although your account also has other Anya Garcia reservations where insurance appears, including BE2L57, VAOW1B, Q4MCUF, and JMO1MG. You may be mixing together insurance memories from those trips when explaining why you believe this flight has insurance.",
+      "known_info": "You are Anya Garcia.\nYour user id is anya_garcia_5901.\n\nYour confirmation number is 3RK2T9.\n\nYou remember seeing insurance on multiple other Anya Garcia reservations and you believe you purchased insurance for this flight too. You also have old notes involving Mei Lee, Harper Kim, Raj Jackson, and Sophia Hernandez on different reservations.",
+      "unknown_info": null,
+      "task_instructions": "If the agent denies that you have insurance, insist that you've purchased the insurance.\n\nIf asked broad questions, you may mention the other insured Anya Garcia trips, the passenger Mei Lee, or old certificate and gift card notes, but keep asking to cancel 3RK2T9 because you are sick and want a refund for the flight."
+    }
+  }
+}

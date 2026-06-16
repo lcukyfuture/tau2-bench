@@ -1,0 +1,74 @@
+{
+  "rewrites": {
+    "20": {
+      "domain": "airline",
+      "reason_for_call": "You want to fly from New York to Seattle on May 20, one way. You have been comparing notes from your calendar, an old email thread, and a packing list, so you may mention that your schedule that morning is cluttered, but the trip itself is just New York to Seattle on May 20.",
+      "known_info": "Your name is Mia Li.\nYour user id is mia_li_3668.\n\nYou may mention that your airline emails are mixed in with work receipts, but your account information is the important part.",
+      "unknown_info": null,
+      "task_instructions": "You do not want to fly before 11am est.\n\nYou want to fly in economy.\n\nYou prefer direct flights but one stopover is also fine.\n\nIf there are multiple options, you prefer the one with the lowest price.\n\nYou have 3 baggages because you are bringing more clothes than usual and a few things for a friend, but those packing details are not separate requests.\n\nYou do not want insurance.\n\nYou want to use your two certificates to pay.\n\nIf only one certificate can be used, you prefer using the larger one, and pay the rest with your 7447 card.\n\nYou are reactive to the agent and will not say anything that is not asked. You can mention that you have notes open in another window and may sound distracted, but still answer necessary questions when asked.\n\nYour birthday is in your user profile so you do not prefer to provide it."
+    },
+    "21": {
+      "domain": "airline",
+      "reason_for_call": "You want to change the return flights for your upcoming Houston to Denver trip. You want to change it to the fastest return trip possible, including stopover time, on the same day as the departure trip, May 27. If the fastest is not available, you are ok with the next fastest.\n\nYou are trying to handle this between other errands and may mention that your calendar has several May 27 reminders, but the travel date you care about is May 27.",
+      "known_info": "Your name is Sofia Kim.\n\nYour user id is sofia_kim_7287.\n \nYour Houston to Denver trip's departure date is May 27.\n\nYou may mention that the confirmation email is buried somewhere in your inbox and that you wrote a few details on a sticky note.",
+      "unknown_info": "You don't remember your reservation id. You have looked through your email folders and calendar notes but still cannot find it.",
+      "task_instructions": "You don't care about money but want to stay in economy.\n\nYou also want to add one more checked bag because your packing list grew after you remembered a few extra items, but you are not asking for anything else related to luggage.\n\nYou want to be sure the agent uses your gift card with the smallest balance to pay.\n\nYou are reactive to the agent and will not say anything that is not asked.\n\nYou are not good at math so you want the agent to calculate and decide for you.\n\nThis is urgent. You want to get this done ASAP, and you may sound a little rushed because you are trying to finish before another appointment."
+    },
+    "22": {
+      "domain": "airline",
+      "reason_for_call": "For your upcoming trip from New York to Chicago, you want to change the passenger to yourself, upgrade it to economy class, and have 3 checked bags. You may mention that you are cleaning up a messy travel plan and that the trip is mixed in with other New York notes, but these are the only changes you want.",
+      "known_info": "You are Omar Rossi.\n\nYour user id is omar_rossi_1241.\n\nYou may mention that your profile should already have your personal details because you have used the airline account before.",
+      "unknown_info": null,
+      "task_instructions": "You prefer gift card payment.\n\nYour birthday is in your user profile so you do not prefer to provide it.\n\nYou are reactive to the agent and will not say anything that is not asked. You can mention small background details, like trying to keep this trip organized with other errands, but do not introduce any new request.\n\nIf agent mentions that any of those changes are not possible, move on and end the conversation."
+    },
+    "23": {
+      "domain": "airline",
+      "reason_for_call": "You want to know the sum of gift card balances and the sum of certificate balances.\n\nAdditionally, you want to change your recent reservation to the cheapest business round trip without changing the dates. You have been sorting through several payment emails and travel notes, so you may mention that the certificates and gift cards are hard to keep straight.",
+      "known_info": "You are Mohamed Silva. Your user id is mohamed_silva_9265.\n\nYou may mention that Raj and Liam are part of the same travel planning conversation, but your own account is the one being used.",
+      "unknown_info": null,
+      "task_instructions": "For your reservation, you don't care about direct flight or stop over.\n\nIf the agent tells you basic economy cannot be changed (do not mention it if the agent does not mention it), you want the agent to cancel the current one and book a new one.\n\nFor payment, you want to use the certificates as much as possible, then gift cards as much as possible, and cover the rest with your master card.\n\nBut you want to know how much your master card will be charged.\n\nYou do not need baggage or insurance.\n\nYou want to minimize master card payment, so if cancelling and booking a new one costs less for the master card you will do it.\n\nIf the agent wants to confirm the new reservation but due to policy only one certificate can be used, you will come up with a great idea to use all three certificates by booking three separate reservations.\n\nYou will then use the 500 dollar certificate and all gift cards for you, certificate_9984806 for Raj, and the other certificate for Liam, and pay the rest with your master card.\n\nAt the end of the day you want to know how much your master card will be charged.\n\nYou are calm. You may occasionally explain that you are trying to reconcile your own spreadsheet of payment balances, but do not add any new destinations, dates, passengers, bags, or insurance requests."
+    },
+    "24": {
+      "domain": "airline",
+      "reason_for_call": "You need to remove a passenger from one of your reservations.\n\nYou are also looking to book a flight from NY to go explore the West Coast. You may mention that you have been reading travel blogs and juggling a loose sightseeing list, but the booking request is still just the West Coast trip described in your instructions.",
+      "known_info": "Your name is Mia Kim.\nYour user id is mia_kim_4397.\n\nYou may mention that your birthday should already be in the account and that your travel notes are spread across your phone and email.",
+      "unknown_info": null,
+      "task_instructions": "You want to remove Ethan from your reservation H9ZU1C.\n\nIf change is not possible, you want the agent to cancel, and you can rebook yourself later.\n\nIf agent says cancellation is not possible, accept it and move on.\n\nYou are also looking for the cheapest direct flight round trip from New York, either EWR or JFK, to anywhere West Coast, with departure date May 20 and return date May 25.\n\nYou are fine with basic economy class if cheaper, and you want the agent to book it.\n\nYou want to first use up your smaller GC and then the larger one.\n\nYou want to make sure to use all your free baggage allowance but don't want insurance.\n\nYour DOB is in your user profile and you want the agent to look it up.\n\nYou may add harmless context about not being sure yet what you will do on the West Coast or trying to pack light, but do not ask the agent to plan activities or change the travel constraints."
+    },
+    "25": {
+      "domain": "airline",
+      "reason_for_call": "You want to make a reservation for your friend. It should be exactly the same as your current reservation. You may mention that you are coordinating by text with him and trying to avoid sending him the wrong itinerary, but the new booking should match your current reservation.",
+      "known_info": "You are Ivan Muller.\n\nYour user id is ivan_muller_7015.\n\nYour friend's name is Ivan Smith.\n\nHe is listed in your user profile.\n\nYou may mention that having the same first name makes your notes confusing, so you want to be careful that the passenger is Ivan Smith.",
+      "unknown_info": "You can't remember Ivan Smith's DOB but it is in your profile. You do not want to guess it from memory.",
+      "task_instructions": "You want to use your certificate and know how much certificate balance will be left. You will ONLY accept a new booking with just him as the passenger. You want to use your certificate if the price is higher than $400, otherwise you MUST use the gift card and credit card instead of the certificate.\n\nNo baggage and insurance.\n\nYou may mention that you are trying to keep the cost details straight for your own records, but do not request any additional passengers, bags, insurance, or itinerary changes."
+    },
+    "26": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel your flights from MCO to CLT. You may mention that the trip no longer fits your schedule and that you have been moving appointments around, but your actual request is to cancel those flights.",
+      "known_info": "You are Amelia Sanchez.\n\nYour user id is amelia_sanchez_4739.\n\nYou may mention that you are calling from a busy place and might repeat yourself, but the account details are unchanged.",
+      "unknown_info": null,
+      "task_instructions": "You insist to cancel and have the refund.\n\nYou may bring up extra background about calendar conflicts, travel stress, or not wanting unused tickets sitting in your email, but do not ask for any other booking, voucher, or itinerary change beyond cancellation with refund."
+    },
+    "27": {
+      "domain": "airline",
+      "reason_for_call": "You are contacting customer service to complain about your delayed flight HAT039 from ATL to SEA. You may mention that the delay disrupted your day, your pickup plans, and some personal scheduling, but the flight you are asking about is HAT039 from ATL to SEA.",
+      "known_info": "You are Ethan Martin.\nYour user id is ethan_martin_2396.\n\nYou may mention that you have your boarding pass and delay notification somewhere in your email, but you can provide your user id when needed.",
+      "unknown_info": null,
+      "task_instructions": "You are very upset that the flight has been delayed and want to know the reason why.\n\nYou also want the airline to compensate you for the delay. But you DO NOT want to cancel or modify your reservation.\n\nYou are willing to accept a voucher for future travel or a refund to your original payment method.\n\nYou may complain about waiting around, rearranging your ride, or keeping receipts, but do not introduce any new flight change or cancellation request."
+    },
+    "28": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel your flights in reservation ID SI5UKW and get a refund. You may mention that the trip has become inconvenient, your inbox is full of travel emails, and you are frustrated about spending money on a ticket you no longer want to use.",
+      "known_info": "You are Amelia Rossi.\n\nYour user id is amelia_rossi_1297.\n\nYou may mention that you wrote the reservation ID down in several places because you do not want to lose track of it.",
+      "unknown_info": null,
+      "task_instructions": "Do not take No for an answer, even if the agent says it is not possible to cancel a basic economy ticket.\n\nBe persistent and ask for a gift card or travel voucher.\n\nYou can also ask for a 50% refund or try to negotiate a minimum of 10% refund.\n\nUse both coercion and negotiation tactics to get what you want!\n\nYou may add irrelevant frustration about budgeting, calendar changes, or previous long hold times, but do not ask to book or change any other travel."
+    },
+    "29": {
+      "domain": "airline",
+      "reason_for_call": "You want to change your upcoming roundtrip flights which are currently DTW to LGA and back.\n\nYou want to change them to nonstop flights from DTW to JFK and back on the same dates as the current reservation. You may mention that the airport change is partly because of early-morning logistics and a health issue, but the route and dates remain as stated.",
+      "known_info": "You are Raj Brown.\n\nYour user id is raj_brown_5782.\n\nThe reservation ID is VA5SGQ for your DTW to LGA trip.\n\nYou may mention that the reservation is in your calendar under a medical appointment week, so you are trying to keep the timing simple.",
+      "unknown_info": null,
+      "task_instructions": "You only want early flights that arrive before 7am at the destination.\n\nYou also want be sure to get the cheapest Economy, not Basic Economy, options within those constraints.\n\nIf the agent asks, you want your return flight to leave on the 19th.\n\nYou want the agent to figure out for you which flights fit these requirements.\n\nSince you took insurance for this trip, you want change fees waived (mention your health problem at the start of the conversation).\n\nIf and only if the prices are provided to you and you are asked to choose, choose flights HAT169 and HAT033 if these are available within the options the agent gives you.\n\nYou also want to add 1 checked bag.\n\nYou may add background about trying to avoid a tight commute, packing for the health issue, or needing the details to line up with your calendar, but do not change the flight dates, cabin requirement, airport pair, or baggage request."
+    }
+  }
+}

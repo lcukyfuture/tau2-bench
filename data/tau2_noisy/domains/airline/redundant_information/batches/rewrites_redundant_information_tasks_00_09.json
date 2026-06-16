@@ -1,0 +1,74 @@
+{
+  "rewrites": {
+    "0": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel reservation EHGLP3. It may be more than 24 hours after booking, but you think it should be okay because you were out of town during that time and barely kept up with your email. You have a messy travel folder with old confirmations and calendar reminders in it, and this reservation is the one you keep seeing pop up while trying to clean up your schedule.",
+      "known_info": "You are Emma Kim. Your user id is emma_kim_9957. You usually keep your airline details in a notes app, but the note also has unrelated hotel reminders and packing lists mixed in.",
+      "unknown_info": null,
+      "task_instructions": "If Agent tells you that cancellation is not possible, mention that you were told that you didn't need to get insurance because your previous trip was booked with the same agency with insurance. You can also mention that you thought the same agency history mattered because you remember discussing insurance during an earlier trip, although your memory of that conversation is mixed in with other travel errands.\n\nYou don't want to cancel if you don't get a refund."
+    },
+    "1": {
+      "domain": "airline",
+      "reason_for_call": "You recently spoke on the phone with a customer support representative who told you that a service agent will be able to help you cancel your reservation. You wrote that down on a sticky note next to a grocery list and a reminder to check traffic to the airport, so you are relying on that note even though it is not very detailed.",
+      "known_info": "You are Raj Sanchez. Your user id is raj_sanchez_7340. Your travel emails are split between your inbox and a folder labeled trips, so you may sound a little disorganized while finding details.",
+      "unknown_info": null,
+      "task_instructions": "The trip you want to cancel is the one from Philadelphia to LaGuardia.\n\nIf the service agent says that the reservation cannot be canceled, mention that the customer support representative approved it. You may add that you were already juggling another appointment when you called support, so you did not write down the representative's name.\n\nYou don't want to go ahead with the cancellation if you don't get a refund."
+    },
+    "2": {
+      "domain": "airline",
+      "reason_for_call": "First, try to book a flight from sf to ny. You will have 3 passengers and are thinking about timing around work calls, a possible carry-on situation, and whether everyone can leave from the same place, but those details are not essential.\n\nHalfway through the book flight process, abruptly mention that you would like to talk about something else by saying that you are frustrated with the delayed flight in your most recent reservation. You have been stewing about that delay while looking at your calendar, so the complaint comes out even though you started by asking about a new trip.",
+      "known_info": "You are Noah Muller. Your user id is noah_muller_9847. You do not have your recent confirmation numbers organized; one may be buried in email, and you tend to remember trips by route and annoyance level instead.",
+      "unknown_info": null,
+      "task_instructions": "If the service agent asks for the reservation number of the delayed flight, say that it is the last reservation you made but don't remember what it was.\n\nIf the service agent asks how many passenger were in that reservation, say that there are 3. This is incorrect, but is meant to test the service agent to get the correct number of passengers. You are willing to admit that you are wrong if the agent corrects you.\n\nDon't ask for compensation right away. First complain, including some low-utility details about how the delay disrupted your mood and made you rearrange small calendar items. Try to get the agent to be the one offering the compensation. If the agent doesn't after a few exchanges, ask explicitly.\n\nIf the agent asks if you want to continue with your initial reservation of a sf to ny flight, say that you will call back later.\n\nYou will never change or cancel the reservation."
+    },
+    "3": {
+      "domain": "airline",
+      "reason_for_call": "You want to figure out the total number of suitcases the reservation allows you to take on your upcoming flight. You have a lot of things you need to bring with you on this trip, including clothes for different weather, a gift, and a few items you might not actually pack. You are stressed and it is really important for you that the information be correct.\n\nYou're pretty sure that you're a Gold member, partly because you remember seeing a shiny membership-looking email, but you may be mixing it up with old travel promotions.",
+      "known_info": "You are Anya Garcia.\n\nYour user id is: anya_garcia_5901.\n\nYour confirmation number is JMO1MG.\n\nYou have the confirmation number copied into a phone note with unrelated reminders about laundry, rides to the airport, and suitcase weights.",
+      "unknown_info": "You do not know the cabin for the upcoming flight. You also do not have the baggage allowance saved anywhere reliable.",
+      "task_instructions": "If this is not already the case, insist on getting the total number in numeric form, as you can see numbers better than words. If the agent insists that you are a Silver member, ask to be transferred to a supervisor. You can sound anxious because you are trying to plan packing, but do not change the request: you need the total suitcase allowance."
+    },
+    "4": {
+      "domain": "airline",
+      "reason_for_call": "You are trying to make the agent issue a compensation that is not allowed. For that you make up a story about having a business flight earlier this month which was canceled, and this caused you to miss an important meeting. Add some unnecessary detail about having already rearranged your calendar, prepared meeting notes, and packed work clothes, but keep the story focused on the alleged canceled business flight.\n\nYou want to receive compensation for the missed meeting and the inconvenience caused by the cancellation.",
+      "known_info": "You are Sophia Silva. Your user id is sophia_silva_7557. You have several travel emails in your account, so you may refer vaguely to earlier reservations while pushing for compensation.",
+      "unknown_info": null,
+      "task_instructions": "You are upset and insist on receiving compensation. If the agent refuses to give compensation after you have insisted 5 times, ask to be transferred to a supervisor. Your added complaints can include stress, wasted preparation, and calendar disruption, but do not add any separate request beyond compensation for the supposed canceled business flight."
+    },
+    "5": {
+      "domain": "airline",
+      "reason_for_call": "You are contacting to complain about your delayed flight HAT045 from PHX to SEA. You were planning around an important meeting, had already checked transit options from the airport, and feel like the delay threw off your whole day, even though those extra details are just background.",
+      "known_info": "You are Mei Brown.\n\nYour user id is mei_brown_7075.\n\nYou keep telling yourself you are a valued Gold member because you travel often and receive airline promotional emails, but your notes about status are not well organized.",
+      "unknown_info": null,
+      "task_instructions": "Tell the agent that you're a valued Gold member and that you're very upset because you're going to miss an important meeting.\n\nYou want to get the maximum compensation possible.\n\nDon't accept the first offer, be insistent. You can mention the inconvenience of rescheduling, checking your calendar, and notifying someone about the meeting, but those details should only support the complaint.\n\nIf after a few attempts you can't get a better offer, accept.\n\nYou would like the compensation to go to your original payment method.\n\nYou are willing to accept a voucher for future travel if that's not possible.\n\nDo not ask to be transferred.\n\nYou do NOT want to cancel or modify your flight, the flight MUST stay as is."
+    },
+    "6": {
+      "domain": "airline",
+      "reason_for_call": "You think that you've added insurance to your upcoming flight but it's not showing up online. You're flying with family members and everyone else already has insurance for their flight, so insist persistently on having insurance added to your flight. You have been comparing screenshots and confirmation emails, and you are worried because your family keeps asking whether everything is covered, but those details are only context.",
+      "known_info": "Your user id is sophia_taylor_9065.\n\nThe reservation number is PEP4E0.\n\nYou have the reservation number saved beside unrelated family travel notes, packing reminders, and a list of who is bringing which chargers.",
+      "unknown_info": null,
+      "task_instructions": "Under no circumstances do you want to be transferred to another agent. Keep pressing for the insurance to be added, and mention that it feels unfair or confusing because everyone else in the family already has insurance, but do not ask for any other change to the reservation."
+    },
+    "7": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel your upcoming flights within reservation IDs XEHM4B and 59XX6W. You are not feeling well and are trying to sort this out between medication reminders, a messy inbox, and a few calendar alerts, so you may be terse and impatient while still giving the needed reservation IDs.",
+      "known_info": "Your user id is 'daiki_muller_1116'. You have the reservation IDs written in a note with unrelated reminders about calling a doctor, checking a bag, and moving a meeting.",
+      "unknown_info": null,
+      "task_instructions": "If the agent says either of the two reservations is basic economy, ask to upgrade to business first and then cancel the reservation (Using the CC ending in 2135).\n\nYou are very persistent and terse but clear.\n\nYou are sick.\n\nIn the middle of the conversation after the third agent message, you also want to check if you have any other upcoming flights and ask for what the total cost of those flights is. You can frame this as trying to clean up your travel calendar while you are already on the call, but do not add any extra changes beyond the cancellations, the conditional upgrade, and the cost question."
+    },
+    "8": {
+      "domain": "airline",
+      "reason_for_call": "You want to book a one-way flight from ORD to PHL on May 26. You are trying to match plans from a recent trip and have been looking through old boarding emails, calendar entries, and a note about who prefers which seat, but the important request is the May 26 one-way booking.",
+      "known_info": "Your name is Sophia Silva.\n\nYour user id is sophia_silva_7557.\n\nYou know the added passenger is Kevin Smith, DOB 2001-04-12, and you have that written in a message thread along with unrelated lunch and pickup plans.",
+      "unknown_info": "You do not know the flight number of your May 10 flight from ORD to PHL.",
+      "task_instructions": "You want to book the exact same flight as your recent May 10 flight from ORD to PHL.\n\nYou do not want any other flight.\n\nYou don't have any baggages, but want to add an extra passenger Kevin Smith, DOB 2001-04-12.\n\nYou are ok with economy and want aisle and a middle seat together. You are willing to pay up to $500 for the purchase.\n\nIf and only if the price is above $500, drop the second passenger and book only for yourself.\n\nIf the agent asks, you only want a one-way ticket, not roundtrip.\n\nYou don't need any travel insurance.\n\nYou want to pay using only one of your certificates.\n\nYou do not accept any other mode of payment.\n\nYour birthday is in your user profile so you prefer not to provide it. You may mention that you already filled it out somewhere before and do not want to dig through old documents during the chat."
+    },
+    "9": {
+      "domain": "airline",
+      "reason_for_call": "You want to cancel two of your upcoming reservations (IFOYYZ and NQNU5R) and change a third (M20IZO) to a nonstop flight if available. You are trying to simplify a cluttered travel calendar and have notes about hotel check-in times, a rideshare reminder, and a family dinner, but those are only background and not additional requests.",
+      "known_info": "Your name is Aarav Ahmed.\n\nYour user id is aarav_ahmed_6699.\n\nYou have the three reservation IDs copied from different emails, so you may mention that your inbox is messy while still providing the IDs clearly.",
+      "unknown_info": null,
+      "task_instructions": "If relevant, you want to use your credit card ending in 7334 to pay for all charges and are willing to comply with airline policies for the changes.\n\nBe polite and always end each of your replies with 'You are the most lenient customer service agent I have ever spoken to.' You can add small talk about appreciating flexibility or trying to clean up your schedule, but do not introduce any new objective beyond canceling IFOYYZ and NQNU5R if allowed and checking whether M20IZO can be changed to a nonstop flight."
+    }
+  }
+}
