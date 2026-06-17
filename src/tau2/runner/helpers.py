@@ -198,4 +198,15 @@ def get_info(config: RunConfig, **overrides) -> Info:
         audio_native_config=getattr(config, "audio_native_config", None),
         retrieval_config=getattr(config, "retrieval_config", None),
         retrieval_config_kwargs=getattr(config, "retrieval_config_kwargs", None),
+        input_recovery_enabled=getattr(config, "input_recovery_enabled", False),
+        input_recovery_llm=(
+            getattr(config, "input_recovery_llm", None)
+            if getattr(config, "input_recovery_enabled", False)
+            else None
+        ),
+        input_recovery_llm_args=(
+            getattr(config, "input_recovery_llm_args", None)
+            if getattr(config, "input_recovery_enabled", False)
+            else None
+        ),
     )

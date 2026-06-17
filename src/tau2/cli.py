@@ -5,6 +5,8 @@ from tau2.config import (
     DEFAULT_AGENT_IMPLEMENTATION,
     DEFAULT_AUDIO_NATIVE_MODELS,
     DEFAULT_AUDIO_NATIVE_PROVIDER,
+    DEFAULT_INPUT_RECOVERY_LLM,
+    DEFAULT_INPUT_RECOVERY_LLM_ARGS,
     DEFAULT_INTEGRATION_DURATION_SECONDS,
     DEFAULT_INTERRUPTION_CHECK_INTERVAL_SECONDS,
     DEFAULT_LLM_AGENT,
@@ -217,6 +219,24 @@ def add_run_args(parser):
         action="store_true",
         default=False,
         help="Enforce communication protocol rules (e.g., no mixed messages with text and tool calls). Default is False.",
+    )
+    parser.add_argument(
+        "--input-recovery",
+        action="store_true",
+        default=False,
+        help="Enable LLM-based denoising of user messages before they reach the agent. Currently supported for airline text runs only.",
+    )
+    parser.add_argument(
+        "--input-recovery-llm",
+        type=str,
+        default=DEFAULT_INPUT_RECOVERY_LLM,
+        help=f"The LLM to use for input recovery. Default is {DEFAULT_INPUT_RECOVERY_LLM}.",
+    )
+    parser.add_argument(
+        "--input-recovery-llm-args",
+        type=json.loads,
+        default=DEFAULT_INPUT_RECOVERY_LLM_ARGS,
+        help=f"Arguments to pass to the input recovery LLM. Default is {DEFAULT_INPUT_RECOVERY_LLM_ARGS}.",
     )
     parser.add_argument(
         "--user-persona",
@@ -678,6 +698,9 @@ def main():
                 user=args.user,
                 max_steps=args.max_steps,
                 enforce_communication_protocol=args.enforce_communication_protocol,
+                input_recovery_enabled=args.input_recovery,
+                input_recovery_llm=args.input_recovery_llm,
+                input_recovery_llm_args=args.input_recovery_llm_args,
             )
 
         return run_domain(config)

@@ -507,3 +507,92 @@ def test_validate_communication_allows_valid_messages(
     # Should initialize successfully with valid message
     assert orchestrator.done is False
     assert orchestrator.termination_reason is None
+
+
+class _StaticAgent:
+    def __init__(self):
+        self.received_message = None
+
+    def generate_next_message(self, message, state):
+        self.received_message = message
+        return AssistantMessage(role="assistant", content="agent response"), state
+
+    def is_stop(self, message):
+        return False
+
+    def stop(self, message, state):
+        pass
+
+    def set_seed(self, seed):
+        pass
+
+
+class _StaticUser:
+    def generate_next_message(self, message, state):
+        return UserMessage(role="user", content="unused"), state
+
+    def stop(self, message, state):
+        pass
+
+    def set_seed(self, seed):
+        pass
+
+
+class _StaticInputRecovery:
+    def recover(self, message):
+        from tau2.user.input_recovery import InputRecoveryResult
+
+        recovered_message = deepcopy(message)
+        recovered_message.content = "cleaned user request"
+        recovered_message.raw_data = {
+            "input_recovery": {
+                "original_content": message.content,
+                "recovered_content": recovered_message.content,
+            }
+        }
+        return InputRecoveryResult(
+            message=recovered_message,
+            original_content=message.content,
+            recovered_content=recovered_message.content,
+            cost=0.01,
+            usage={"prompt_tokens": 1, "completion_tokens": 1},
+            generation_time_seconds=0.1,
+        )
+
+
+def test_input_recovery_replaces_agent_visible_user_message(
+    domain_name: str,
+    base_task: Task,
+    get_environment: Callable[[], Environment],
+):
+    agent = _StaticAgent()
+    user = _StaticUser()
+    orchestrator = Orchestrator(
+        domain=domain_name,
+        user=user,
+        agent=agent,
+        environment=get_environment(),
+        task=base_task,
+        input_recovery=_StaticInputRecovery(),
+    )
+    noisy_message = UserMessage(role="user", content="noisy user request")
+    orchestrator.agent_state = {}
+    orchestrator.user_state = {}
+    orchestrator.trajectory = [noisy_message]
+    orchestrator.message = noisy_message
+    orchestrator.from_role = Role.USER
+    orchestrator.to_role = Role.AGENT
+
+    orchestrator.step()
+
+    assert agent.received_message.content == "cleaned user request"
+    trajectory_user_message = next(
+        msg for msg in orchestrator.get_trajectory() if isinstance(msg, UserMessage)
+    )
+    assert trajectory_user_message.content == "cleaned user request"
+    assert (
+        trajectory_user_message.raw_data["input_recovery"]["original_content"]
+        == "noisy user request"
+    )
+    assert orchestrator.input_recovery_stats["num_calls"] == 1
+    assert orchestrator.input_recovery_stats["cost"] == 0.01

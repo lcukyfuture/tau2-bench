@@ -28,6 +28,7 @@ from tau2.data_model.simulation import SimulationRun, TerminationReason
 from tau2.data_model.tasks import EnvFunctionCall, InitializationData, Task
 from tau2.environment.environment import Environment, EnvironmentInfo
 from tau2.orchestrator.modes import CommunicationMode
+from tau2.user.input_recovery import InputRecovery
 from tau2.user.user_simulator import DummyUser, UserSimulator, UserState
 from tau2.user.user_simulator_base import (
     HalfDuplexUser,
@@ -405,6 +406,7 @@ class Orchestrator(BaseOrchestrator[AgentT, UserT, Message]):
         simulation_id: Optional[str] = None,
         validate_communication: bool = False,
         timeout: Optional[float] = None,
+        input_recovery: Optional[InputRecovery] = None,
     ):
         """
         Initialize the Orchestrator for managing simulation between Agent, User, and Environment.
@@ -448,6 +450,12 @@ class Orchestrator(BaseOrchestrator[AgentT, UserT, Message]):
         self.trajectory: list[Message] = []
         self.solo_mode = solo_mode
         self.validate_communication = validate_communication
+        self.input_recovery = input_recovery
+        self.input_recovery_stats: dict[str, Any] = {
+            "enabled": input_recovery is not None,
+            "num_calls": 0,
+            "cost": 0.0,
+        }
 
         # Turn-based routing state
         self.from_role: Optional[Role] = None
@@ -803,6 +811,10 @@ class Orchestrator(BaseOrchestrator[AgentT, UserT, Message]):
         ):
             speech_environment = self.user.voice_settings.speech_environment
 
+        run_info = None
+        if self.input_recovery_stats["enabled"]:
+            run_info = {"input_recovery": dict(self.input_recovery_stats)}
+
         simulation_run = SimulationRun(
             id=self.simulation_id,
             task_id=self.task.id,
@@ -817,8 +829,32 @@ class Orchestrator(BaseOrchestrator[AgentT, UserT, Message]):
             seed=self.seed,
             mode=self.mode.value,
             speech_environment=speech_environment,
+            info=run_info,
         )
         return simulation_run
+
+    def _recover_user_message_for_agent(self, message: Message) -> Message:
+        """Denoise a user text message before sending it to the agent."""
+        if self.input_recovery is None:
+            return message
+        if not isinstance(message, UserMessage):
+            return message
+        if message.is_tool_call() or not message.has_text_content():
+            return message
+        if UserSimulator.is_stop(message):
+            return message
+
+        result = self.input_recovery.recover(message)
+        self.input_recovery_stats["num_calls"] += 1
+        if result.cost is not None:
+            self.input_recovery_stats["cost"] += result.cost
+
+        for idx in range(len(self.trajectory) - 1, -1, -1):
+            if self.trajectory[idx] is message:
+                self.trajectory[idx] = result.message
+                break
+
+        return result.message
 
     def step(self):
         """
@@ -859,8 +895,10 @@ class Orchestrator(BaseOrchestrator[AgentT, UserT, Message]):
         elif (
             self.from_role == Role.USER or self.from_role == Role.ENV
         ) and self.to_role == Role.AGENT:
+            agent_input = self._recover_user_message_for_agent(self.message)
+            self.message = agent_input
             agent_msg, self.agent_state = self.agent.generate_next_message(
-                self.message, self.agent_state
+                agent_input, self.agent_state
             )
             agent_msg.validate()
             if self.agent.is_stop(agent_msg):

@@ -27,6 +27,7 @@ from tau2.environment.environment import Environment
 from tau2.orchestrator.full_duplex_orchestrator import FullDuplexOrchestrator
 from tau2.orchestrator.orchestrator import Orchestrator
 from tau2.registry import registry
+from tau2.user.input_recovery import InputRecovery
 from tau2.user.user_simulator import DummyUser, UserSimulator
 from tau2.user.user_simulator_base import FullDuplexUser, HalfDuplexUser
 from tau2.user_simulation_voice_presets import (
@@ -382,6 +383,17 @@ def build_text_orchestrator(
         solo_mode=solo_mode,
     )
 
+    input_recovery = None
+    if config.input_recovery_enabled:
+        if domain != "airline":
+            raise ValueError(
+                "Input recovery is currently only supported for airline text runs."
+            )
+        input_recovery = InputRecovery(
+            llm=config.input_recovery_llm,
+            llm_args=config.input_recovery_llm_args,
+        )
+
     orchestrator = Orchestrator(
         domain=domain,
         agent=agent,
@@ -395,6 +407,7 @@ def build_text_orchestrator(
         simulation_id=simulation_id,
         validate_communication=config.enforce_communication_protocol,
         timeout=config.timeout,
+        input_recovery=input_recovery,
     )
 
     logger.debug(

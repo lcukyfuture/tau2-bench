@@ -20,6 +20,9 @@ from tau2.config import (
     DEFAULT_BACKCHANNEL_MAX_THRESHOLD_SECONDS,
     DEFAULT_BACKCHANNEL_MIN_THRESHOLD_SECONDS,
     DEFAULT_BACKCHANNEL_POISSON_RATE,
+    DEFAULT_INPUT_RECOVERY_ENABLED,
+    DEFAULT_INPUT_RECOVERY_LLM,
+    DEFAULT_INPUT_RECOVERY_LLM_ARGS,
     DEFAULT_INTEGRATION_DURATION_SECONDS,
     DEFAULT_INTERRUPTION_CHECK_INTERVAL_SECONDS,
     DEFAULT_LLM_AGENT,
@@ -570,6 +573,27 @@ class TextRunConfig(BaseRunConfig):
         Field(
             description="Text streaming configuration",
             default=None,
+        ),
+    ]
+    input_recovery_enabled: Annotated[
+        bool,
+        Field(
+            description="Enable LLM-based denoising of user messages before they reach the agent. Currently supported for airline text runs only.",
+            default=DEFAULT_INPUT_RECOVERY_ENABLED,
+        ),
+    ]
+    input_recovery_llm: Annotated[
+        str,
+        Field(
+            description="The model to use for user input recovery.",
+            default=DEFAULT_INPUT_RECOVERY_LLM,
+        ),
+    ]
+    input_recovery_llm_args: Annotated[
+        dict,
+        Field(
+            description="Arguments to pass to the input recovery LLM.",
+            default_factory=lambda: deepcopy(DEFAULT_INPUT_RECOVERY_LLM_ARGS),
         ),
     ]
 
@@ -1227,6 +1251,18 @@ class Info(BaseModel):
     )
     retrieval_config_kwargs: Optional[dict] = Field(
         description="Arguments passed to the retrieval config constructor.",
+        default=None,
+    )
+    input_recovery_enabled: bool = Field(
+        description="Whether user input recovery was enabled for text runs.",
+        default=DEFAULT_INPUT_RECOVERY_ENABLED,
+    )
+    input_recovery_llm: Optional[str] = Field(
+        description="The model used for user input recovery.",
+        default=None,
+    )
+    input_recovery_llm_args: Optional[dict] = Field(
+        description="Arguments passed to the input recovery LLM.",
         default=None,
     )
 

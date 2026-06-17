@@ -22,9 +22,19 @@ SEED="${SEED:-300}"
 
 USER_LLM="${USER_LLM:-openai/deepseek-v4-pro}"
 USER_LLM_ARGS="${USER_LLM_ARGS:-{\"api_base\":\"https://api.deepseek.com\",\"temperature\":0.0,\"extra_body\":{\"thinking\":{\"type\":\"disabled\"}}}}"
+INPUT_RECOVERY="${INPUT_RECOVERY:-0}"
+INPUT_RECOVERY_LLM="${INPUT_RECOVERY_LLM:-$USER_LLM}"
+INPUT_RECOVERY_LLM_ARGS="${INPUT_RECOVERY_LLM_ARGS:-$USER_LLM_ARGS}"
 
 CLEAN_SAVE_TO="${CLEAN_SAVE_TO:-gemma_agent_deepseek_v4_pro_user_airline_clean_full_run1}"
 NOISY_SAVE_TO="${NOISY_SAVE_TO:-gemma_agent_deepseek_v4_pro_user_airline_v4_strict_all_tasks_full_run1}"
+
+RECOVERY_ARGS=()
+if [ "$INPUT_RECOVERY" = "1" ]; then
+  RECOVERY_ARGS+=(--input-recovery)
+  RECOVERY_ARGS+=(--input-recovery-llm "$INPUT_RECOVERY_LLM")
+  RECOVERY_ARGS+=(--input-recovery-llm-args "$INPUT_RECOVERY_LLM_ARGS")
+fi
 
 DOMAIN=airline \
 SAVE_TO="$CLEAN_SAVE_TO" \
@@ -45,4 +55,5 @@ scripts/run_gemma_tau2_airline_full.sh
   --user-llm-args "$USER_LLM_ARGS" \
   --max-concurrency "$MAX_CONCURRENCY" \
   --timeout "$TIMEOUT" \
-  --seed "$SEED"
+  --seed "$SEED" \
+  "${RECOVERY_ARGS[@]}"

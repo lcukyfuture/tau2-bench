@@ -12,6 +12,7 @@ import json
 from pathlib import Path
 from typing import Any
 
+from tau2.config import DEFAULT_INPUT_RECOVERY_LLM, DEFAULT_INPUT_RECOVERY_LLM_ARGS
 from tau2.data_model.simulation import TextRunConfig
 from tau2.data_model.tasks import Task
 from tau2.evaluator.evaluator import EvaluationType
@@ -19,7 +20,6 @@ from tau2.metrics.agent_metrics import compute_metrics
 from tau2.runner import run_tasks
 from tau2.utils.display import ConsoleDisplay
 from tau2.utils.utils import DATA_DIR
-
 
 DEFAULT_TASKS_FILE = Path(
     "data/tau2_noisy/domains/airline/redundant_information/"
@@ -79,6 +79,13 @@ def main() -> None:
     parser.add_argument("--user-llm", default=None)
     parser.add_argument("--agent-llm-args", type=_parse_json_object, default=None)
     parser.add_argument("--user-llm-args", type=_parse_json_object, default=None)
+    parser.add_argument("--input-recovery", action="store_true", default=False)
+    parser.add_argument("--input-recovery-llm", default=DEFAULT_INPUT_RECOVERY_LLM)
+    parser.add_argument(
+        "--input-recovery-llm-args",
+        type=_parse_json_object,
+        default=DEFAULT_INPUT_RECOVERY_LLM_ARGS,
+    )
     parser.add_argument("--num-trials", type=int, default=1)
     parser.add_argument("--max-concurrency", type=int, default=1)
     parser.add_argument("--timeout", type=int, default=900)
@@ -126,6 +133,9 @@ def main() -> None:
         auto_resume=not args.no_auto_resume,
         auto_review=False,
         verbose_logs=not args.quiet,
+        input_recovery_enabled=args.input_recovery,
+        input_recovery_llm=args.input_recovery_llm,
+        input_recovery_llm_args=args.input_recovery_llm_args,
     )
 
     save_dir = DATA_DIR / "simulations" / args.save_to
@@ -134,6 +144,7 @@ def main() -> None:
     print(f"Loaded {len(tasks)} task(s) from {tasks_file}")
     print(f"Saving results to {save_path}")
     print(f"Agent/User LLM: {config.llm_agent} / {config.llm_user}")
+    print(f"Input recovery: {config.input_recovery_enabled} ({config.input_recovery_llm})")
 
     results = run_tasks(
         config,
